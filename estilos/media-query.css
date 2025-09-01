@@ -1,9 +1,12 @@
 @charset "UTF-8";
 
-@media screen and (max-width: 768px) and (max-height: 1024px) {
+@media screen and (max-width: 768px) and (max-height: 992px) {
+    body {
+        background-image: linear-gradient(to right, #000000, #4800ad);
+    }
+
     section#container {
-        width: 90%;
-        background-position: left;
+        width: 90vw;
     }
 
     section#container div#imagem {
@@ -12,9 +15,29 @@
         height: 100%;
     }
 
-    sewction#container div#formulario {
+    section#container div#formulario {
         float: right;
         width: 70%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+     body {
+        background-image: linear-gradient(to right, #000000, #4800ad);
+    }
+    section#container {
+        width: 950vw;
+    }
+
+    section#container div#imagem {
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+
+    section#container div#formulario {
+        float: right;
+        width: 50%;
     }
 }
 
@@ -25,12 +48,12 @@
 
     section#container div#imagem {
         float: left;
-        width: 40%;
+        width: 50%;
         height: 100%;
     }
 
     section#container div#formulario {
         float: right;
-        width: 60%;
+        width: 50%;
     }
 }
